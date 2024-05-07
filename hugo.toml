@@ -4,6 +4,8 @@ copyright = "Copyright &copy; 2024 - Philipp Enzinger"
 canonifyurls = true
 theme = "hugo-kiera"
 
+publishDir = "docs"
+
 paginate = 3
 
 summaryLength = 30
