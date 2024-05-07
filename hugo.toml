@@ -6,9 +6,9 @@ theme = "hugo-kiera"
 
 publishDir = "docs"
 
-paginate = 3
+paginate = 5
 
-summaryLength = 30
+summaryLength = 20
 enableEmoji = true
 pygmentsCodeFences = true
 
@@ -32,7 +32,7 @@ pygmentsCodeFences = true
     #description = "A lot can be covered, but let's focus on the quintessential"
     #images = [""] #This is used for opengraph/twitter cards.
     customCSS = []  #Optional Customised CSS
-    #favicon = ""
+    favicon = "static/IKB_191.ico"
     #utterancesRepo = "username/repository"
     #utterancesIssueTerm = "pathname"
     #homepageLength = 10
@@ -40,7 +40,7 @@ pygmentsCodeFences = true
     #mathjax = true #Enable display of mathematics using mathjax (LaTeX syntax)
     #katex = true #Enable display of mathematics using katex (Faster LaTeX rendering)
     #google_fonts = ["Staatliches"] # Adds additional google fonts
-    #disableDarkModeCSS = false # disables css style for users using dark-mode
+    disableDarkModeCSS = true # disables css style for users using dark-mode
 
 # uncomment to enable the Tags link on the main toolbar
 #  [[menu.main]]
