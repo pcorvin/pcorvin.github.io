@@ -2,32 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/wilyer/</loc>
+    <loc>https://pcorvin.github.io/posts/wilyer/</loc>
     <lastmod>2024-04-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/defense/</loc>
+    <loc>https://pcorvin.github.io/posts/defense/</loc>
     <lastmod>2024-02-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/chris/</loc>
+    <loc>https://pcorvin.github.io/posts/chris/</loc>
     <lastmod>2023-12-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/adam/</loc>
+    <loc>https://pcorvin.github.io/posts/adam/</loc>
     <lastmod>2023-11-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/tommyjohn/</loc>
+    <loc>https://pcorvin.github.io/posts/tommyjohn/</loc>
     <lastmod>2023-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://pcorvin.github.io/about/</loc>
     <lastmod>2023-09-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://pcorvin.github.io/posts/</loc>
     <lastmod>2024-04-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://pcorvin.github.io/</loc>
     <lastmod>2024-04-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://pcorvin.github.io/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://pcorvin.github.io/tags/</loc>
   </url>
 </urlset>
