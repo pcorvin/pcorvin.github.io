@@ -10,14 +10,16 @@ Hi, pleased to have you here.
 
 I am Philipp, currently based in Berlin & Vienna and I enjoy writing about multiple topics of personal interest.
 
-You might see different topics coming up over time & in random order. I try to keep the list of topics as updated as possible, highlighting what I already wrote about & what I will in the future.
+You might see different topics coming up over time & in random order. I try to keep the list of topics as updated as possible, highlighting what I already wrote about & what I will tackle in the future.
 
 In case you want to reach out, feel free to write me on LinkedIn.
 
 *Current topics:*
-* Baseball (a lot, I am sorry)
+* Baseball
+* Defense in Europe
+* Talking to myself through an LLM
 
 *Future topics:*
-* Ambiguity of words
+* Ambiguity of German words
 * Geographical changes in Africa
-* Blockchain applications
+* Extracting value from satellites: Estimating carbon credits in Paraguay
