@@ -5,6 +5,7 @@ weight = "20"
 meta = "false"
 +++
 
+> Thank you to the [Tommy John Surgery Data](https://docs.google.com/spreadsheets/d/1gQujXQQGOVNaiuwSN680Hq-FDVsCwvN-3AazykOBON0/edit#gid=0), which provided all data used in this article!
 
 When Tommy John injured himself in 1974, he was out indefinitely. Nobody knew what was happening & no doctor was able to fix it. Tommy John (TJ) was not a high-performer but a stellar contributor across his 26 years in the league. The "Bionic Man" started a revolution in the sport of baseball, which heavily impacts it today: he heavily bruised his elbow & got it fixed.
 
@@ -32,4 +33,5 @@ When considering the minor league system, we can relate back to the COVID times 
 
 Minor league injuries are at lower levels, especially compared to the number of total players in the system: Considering the ±270 players in a minor league system per club & the 40-man roster in MLB, the likelyhood of a TJ injury for one of the ± 14 pitchers is 4.62x likelier (5.083% vs. 1.098%).
 
-Recent years were a success nevertheless, focusing more on pitch prevention (staying below 100 pitches) as well as less intensive pitches overall (hello sweeper!). Overall, it might be best to start pitching the knuckleball again.
+
+**But what can we do?** Nothing. Especially offspeed pitchers are prone to TJ & will stay, given the extreme horizontal & vertical movement of pitches. Recent years were a success nevertheless, focusing more on pitch prevention (staying below 100 pitches) as well as the introduction of less intense off-speed pitches overall (hello sweeper!). Overall, it might be best to start pitching the [knuckleball](https://www.youtube.com/watch?v=qusYTWQFIF8) again. Story for another day.
