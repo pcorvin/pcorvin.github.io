@@ -8,18 +8,25 @@ meta = "true"
 
 Hi, pleased to have you here.
 
+### Who are you?
+
 I am Philipp, currently based in Berlin & Vienna and I enjoy writing about multiple topics of personal interest.
 
-You might see different topics coming up over time & in random order. I try to keep the list of topics as updated as possible, highlighting what I already wrote about & what I will tackle in the future.
+You might see different topics coming up over time which have nothing in comon. I try to keep the list of topics as updated as possible, highlighting what I already wrote about & what I will tackle in the future.
 
-In case you want to reach out, feel free to write me on LinkedIn.
+In case you want to reach out, feel free to write me on LinkedIn or 
 
-*Current topics:*
-* Baseball
-* Defense in Europe
-* Talking to myself through an LLM
+philipp dot m dot enzinger at gmail dot com.
 
-*Future topics:*
+### What about the blue square?
+I like [Yves Klein](https://en.wikipedia.org/wiki/Yves_Klein)
+
+### Current topics
+* [Baseball](https://pcorvin.github.io/tommyjohn)
+* [Defense in Europe](https://pcorvin.github.io/austria)
+* LLM benchmarks are not good
+
+### Future topics
 * Ambiguity of German words
 * Geographical changes in Africa
-* Extracting value from satellites: Estimating carbon credits in Paraguay
+* Extracting value from OSINT: Estimating carbon credits in Paraguay

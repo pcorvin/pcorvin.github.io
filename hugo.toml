@@ -28,7 +28,7 @@ pygmentsCodeFences = true
     #devto = "username"
 
 [params]
-    tagline = "A lot can be covered, but let's focus on the quintessential"
+    tagline = "A plethora of topics with more questions than answers"
     #description = "A lot can be covered, but let's focus on the quintessential"
     #images = [""] #This is used for opengraph/twitter cards.
     customCSS = []  #Optional Customised CSS
