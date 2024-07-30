@@ -12,7 +12,7 @@ Hi, pleased to have you here.
 
 I am Philipp, currently based in Berlin & Vienna and I enjoy writing about multiple topics of personal interest.
 
-You might see different topics coming up over time which have nothing in comon. I try to keep the list of topics as updated as possible, highlighting what I already wrote about & what I will tackle in the future.
+You might see different topics coming up over time which have nothing in common. I try to keep the list of topics as updated as possible, highlighting what I already wrote about & what I will tackle in the future.
 
 In case you want to reach out, feel free to write me on LinkedIn or 
 
@@ -24,7 +24,7 @@ I like [Yves Klein](https://en.wikipedia.org/wiki/Yves_Klein)
 ### Current topics
 * [Baseball](https://pcorvin.github.io/tommyjohn)
 * [Defense in Europe](https://pcorvin.github.io/austria)
-* LLM benchmarks are not good
+* [LLM benchmarks are not good](https://pcorvin.github.io/metrics)
 
 ### Future topics
 * Ambiguity of German words
