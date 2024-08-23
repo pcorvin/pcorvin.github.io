@@ -1,29 +1,22 @@
 +++
-title = "LLM benchmarks are not informing their actual performance."
+title = "LLM benchmarks do not inform their actual performance."
 date = 2024-07-28
 weight = "20"
 meta = "false"
 +++
 
-> This is a high-level analysis on current benchmarks for large language models (LLMs) that are developed by OpenAI,
-> Anthropic, Mistral et al. Note that I do not have an immediate answer on how to solve this, yet wanted to
-> highlight a "devil's advocate" answer to existing cries of LLMs to rule everything.
+> This is a high-level analysis of current benchmarks for large language models (LLMs) that are developed by OpenAI, Anthropic, Mistral, et al. Note that I do not have an immediate answer on how to solve this, yet wanted to highlight a “devil’s advocate” answer to existing cries of LLMs to rule everything.
 
 
 ## Introduction
-I am by no means an expert in LLMs, nor foundational models (who truly is?) but I stuck with Deep Learning for quite a bit.
-My focus then & now was a bit different, building new,modular network structures with the building blocks available. The famous ["Attention is all you need"](https://arxiv.org/pdf/1706.03762) paper was
-interesting when it came out, I personally used the structure for auto-encoder structures in feature abstraction. GPT-2 was also interesting, but
-not really worth using, nor at a scale where it mattered.
+I am by no means an expert in LLMs, nor foundational models (who truly is?) but I stuck with Deep Learning for quite a bit. My focus then & now was a bit different, building new, modular network structures with the building blocks available. The famous “Attention is all you need” paper was interesting when it came out, I used the structure for auto-encoder structures in feature abstraction. GPT-2 was also interesting, but not worth using, nor at a scale where it mattered.
 
-Aouple of years latter and it escalated. Businesses build on top foundation models & raise gargantuan seed rounds, mostly without looking at
-the fundamentals: checking whether it *actually* makes sense to use foundational models.
+A couple of years later it escalated. Businesses build on top foundation models & raise gargantuan seed rounds, mostly without looking at the fundamentals: checking whether it makes sense to use foundational models.
 
-The main drivers to choose your LLM are benchmarks, which tell you how much better one is relative to the other. People
-would rely on an 85.9% MMLU, without any deeper understanding, nor insight.
+The main drivers to choosing your LLM are benchmarks, which tell you how much better one is relative to the other. People would rely on an 85.9% MMLU, without any deeper understanding, nor insight.
 
-We thus want to dive into the most common benchmarks, why they do not always (I know, clickbait) reflect on the actual performance
-& why you might look beyond the current leader of the LLM Leaderboard.
+We thus want to dive into the most common benchmarks, why they do not always (I know, clickbait) reflect on the actual performance & why you might look beyond the current leader of the LLM Leaderboard.
+
 
 ## What are the main benchmarks?
 
