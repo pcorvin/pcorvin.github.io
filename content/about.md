@@ -25,6 +25,7 @@ I like [Yves Klein](https://en.wikipedia.org/wiki/Yves_Klein)
 * [Baseball](https://pcorvin.github.io/tommyjohn)
 * [Defense in Europe](https://pcorvin.github.io/austria)
 * [LLM benchmarks are not good](https://pcorvin.github.io/metrics)
+* [Me tinkering on stuff](https://pcorvin.github.io/carsharing)
 
 ### Future topics
 * Ambiguity of German words

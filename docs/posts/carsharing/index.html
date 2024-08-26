@@ -1,0 +1,171 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <title>Comparing carsharing prices in Berlin - Topics for a lifetime</title>
+  <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="The HTML5 Herald" />
+<meta name="author" content="Philipp" /><meta property="og:url" content="https://pcorvin.github.io/posts/carsharing/">
+  <meta property="og:site_name" content="Topics for a lifetime">
+  <meta property="og:title" content="Comparing carsharing prices in Berlin">
+  <meta property="og:description" content="Introduction Riding from one place to another in Berlin can be time-consuming. The city is vast, buses &amp; tram are only available in either part of the city and you mostly end up with 45&#43; min trips from one central place to another.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-08-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-08-25T00:00:00+00:00">
+
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Comparing carsharing prices in Berlin">
+<meta name="twitter:description" content="Introduction Riding from one place to another in Berlin can be time-consuming. The city is vast, buses &amp; tram are only available in either part of the city and you mostly end up with 45&#43; min trips from one central place to another.">
+
+<meta name="generator" content="Hugo 0.125.6">
+    
+    <link rel="shortcut icon" href="https://pcorvin.github.io/IKB_191.ico" />
+  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://pcorvin.github.io/fontawesome/css/all.min.css" />
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  
+  
+  <link rel="stylesheet" type="text/css" href="https://pcorvin.github.io/css/styles-light.css" />
+  
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      
+      <h1>
+        <a href="https://pcorvin.github.io/">Topics for a lifetime</a>
+      </h1>
+
+      <ul id="social-media">
+             <li>
+               <a href="https://twitter.com/dernamepasst" title="Twitter">
+               <i class="fab fa-twitter fa-lg"></i>
+               </a>
+             </li>
+             <li>
+               <a href="https://linkedin.com/in/philippenzinger" title="LinkedIn">
+               <i class="fab fa-linkedin fa-lg"></i>
+               </a>
+             </li>
+      </ul>
+      
+      <p><em>A plethora of topics with more questions than answers</em></p>
+      
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="https://pcorvin.github.io/about/">
+                <i class="fa-li fa  fa-lg"></i><span>About</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+
+    <main>
+
+
+
+
+<article>
+
+    <h1>Comparing carsharing prices in Berlin</h1>
+
+    
+
+    
+      
+
+    
+
+    <h2 id="introduction">Introduction</h2>
+<p>Riding from one place to another in Berlin can be time-consuming. The city is vast, buses &amp; tram are only available in either part of the city and you mostly end up with 45+ min trips from one central place to another. Carsharing is your other option and what can I say: guilty. My partner and I very much enjoy the liberty of taking a car from one place to another and just leaving it there without worrying about taking the ride back. Nevertheless, it is not cheap and price sensitivity kicks in.</p>
+<h2 id="what-we-did-in-the-past">What we did in the past</h2>
+<p>Doing the math in our head. There are four major carsharing providers in Berlin (ShareNow, Miles &amp; Sixt Share), which are also integrated within FreeNow, the Mobility-as-a-Software app of choice, plus Bolt as a standalone. Based on the different pay-as-you-go prices and the help of Google Maps, you somewhat try to estimate the total price at the end of the ride.</p>
+<p>I had some time to spare and wanted to work on a first frontend project so here is a high-level description of how to have a better overview of carsharing prices in Berlin.</p>
+<h2 id="initial-requirements">Initial requirements</h2>
+<p>Requirements were simple:</p>
+<ul>
+<li>Be platform agnostic, i.e. a webpage</li>
+<li>Take an end location as input (eventually a changing starting point)</li>
+<li>Calculate an initial route to get there from a set starting point</li>
+<li>Visualize this route</li>
+<li>Show the different prices for the respective vehicles of all providers</li>
+</ul>
+<p>I had some personal additional requirements for tools &amp; stack:</p>
+<ul>
+<li>No upfront costs for APIs or tooling</li>
+<li>App is in Typescript</li>
+</ul>
+<h2 id="development-process">Development Process</h2>
+<h3 id="initial-plans">Initial plans</h3>
+<p>Given that I do not have any prior experience with any frontend work but Flask, a Typescript walkthrough was a first step. Classes are a very nice concept, although not so much needed as part of this first MVP.</p>
+<p>The app needed a map as a background, one of the major providers for hobbyists is Mapbox, which does not require any payment for the first calls. Google Maps might be more elegant, especially for route planning later on but is quite expensive.</p>
+<p>I first wanted to fetch the positions of the cars and show them with the respective prices in the app. Given my previous experience at Tier, I thought you could easily fetch the respective vehicles from the OpenAPI integration. In the end, not possible without work through MiM &amp; Charles, thus (still) relying on some manual work here.</p>
+<p>The same counts for the prices of all vehicles, which have to be saved within the service rather than fetched with each request. I therefore have to update the prices for each provider, should they change their pricing structure.</p>
+<h3 id="building--asking-for-a-fundament">Building &amp; asking for a fundament</h3>
+<p>As I still had very limited knowledge of Typescript, I wanted to come up with the base through prompts &amp; engaging with Claude. I simply chose Claude for more convenience in project structure &amp; wanted to test their Opus model.</p>
+<p>What can I say, either my prompts were genius or Claude knew exactly what I was up to. It took me a couple of iterations to adjust the files based on the first trials with provider APIs and then leave them out. In the end, the app worked and is able to take an end position &amp; calculate the prices.</p>
+<h3 id="how-are-the-routes-calculated">How are the routes calculated?</h3>
+<p>The missing piece of the puzzle is the route calculation &amp; display. How would you select a destination &amp; a name?</p>
+<p><a href="https://docs.mapbox.com/api/navigation/directions/">Mapbox Directions API</a> offers the possibility to calculate the time &amp; distance between two locations based on average driving patterns. This comes in handy, as a sole provider for all calls is needed.</p>
+<p>The only thing to add to the code is the conversion of street names &amp; locations to lat/long coordinates, which is also a function within <a href="https://docs.mapbox.com/api/search/geocoding-v5/">Mapbox Geocoding</a>.</p>
+<h2 id="the-look">The Look</h2>
+<p>At this early stage, I set up the repository &amp; deployed it with Vercel. This worked great and is therefore accessible through a public URL.</p>
+<figure class="mid"><img src="https://pcorvin.github.io/carsharing.png"
+    alt="First deployment of the app, looking for a way to get to a Restaurant in Berlin. In this case, Bolt is by far the cheapest option, followed by Miles."><figcaption>
+      <p>First deployment of the app, looking for a way to get to a Restaurant in Berlin. In this case, Bolt is by far the cheapest option, followed by Miles.</p>
+    </figcaption>
+</figure>
+
+<p>There is no active development going at this stage, as I am happy with the utility at this point, although points of improvement already popped up.</p>
+<h2 id="moving-forward">Moving forward</h2>
+<p>Some QoL improvements are already planned in the near future:</p>
+<ul>
+<li>Allow destination suggestions, as you have to sometimes enter the postal code to get the right location</li>
+<li>Set up multi-stop routes in case you want to pick up friends along the way</li>
+<li>Ask for location requests to make a more precise route calculation</li>
+<li>Include multi-modal paths: Using the perfect blend of public transport &amp; carsharing to reach your destination. Google does not do a great job at this and might be worth a shot.</li>
+</ul>
+<p>There is no concrete timeline at this point, although I am curious whether this is something others would benefit from. Shoot me a message, happy to share the link to the page for testing!</p>
+
+
+</article>
+
+
+
+
+
+
+</main>
+    <footer>
+        <ul>
+            <li>
+                <h6>Copyright © 2024 - Philipp Enzinger | 
+                    Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+                    <a href="https://pcorvin.github.io/index.xml">Subscribe </a></h6>
+            </li>
+            
+            
+        </ul>
+    </footer>
+</div>
+<script src="https://pcorvin.github.io/js/scripts.js"></script>
+
+
+</body>
+
+</html>
+
