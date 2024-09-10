@@ -26,6 +26,7 @@ I like [Yves Klein](https://en.wikipedia.org/wiki/Yves_Klein)
 * [Defense in Europe](https://pcorvin.github.io/austria)
 * [LLM benchmarks are not good](https://pcorvin.github.io/metrics)
 * [Me tinkering on stuff](https://pcorvin.github.io/carsharing)
+* [Saddlestitching](https://pcorvin.github.io/saddlestitch)
 
 ### Future topics
 * Ambiguity of German words
